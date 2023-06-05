@@ -1,6 +1,6 @@
 {
   "name": "grand-notification",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "A notification plugin for react application",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

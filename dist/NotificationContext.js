@@ -22,10 +22,14 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.useNotification = exports.NotificationProvider = exports.NotificationContext = void 0;
 const react_1 = __importStar(require("react"));
 const uuid_1 = require("uuid");
+const Notification_1 = __importDefault(require("./Notification"));
 exports.NotificationContext = (0, react_1.createContext)(undefined);
 const NotificationProvider = ({ children, }) => {
     const [notifications, setNotifications] = (0, react_1.useState)([]);
@@ -53,7 +57,9 @@ const NotificationProvider = ({ children, }) => {
             setNotifications((prevNotifications) => prevNotifications.filter((notification) => notification.id !== id));
         }, 400);
     };
-    return (react_1.default.createElement(exports.NotificationContext.Provider, { value: { notifications, addNotification, removeNotification } }, children));
+    return (react_1.default.createElement(exports.NotificationContext.Provider, { value: { notifications, addNotification, removeNotification } },
+        react_1.default.createElement(Notification_1.default, null),
+        children));
 };
 exports.NotificationProvider = NotificationProvider;
 const useNotification = () => {

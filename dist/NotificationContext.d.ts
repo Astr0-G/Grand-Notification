@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import Notification from "./Notification";
 interface Notification {
     id: string;
     message: string;

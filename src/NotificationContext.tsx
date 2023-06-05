@@ -1,6 +1,6 @@
 import React, { createContext, useState, useContext, ReactNode } from "react";
 import { v4 as uuidv4 } from "uuid";
-
+import Notification from "./Notification";
 interface Notification {
   id: string;
   message: string;
@@ -74,6 +74,7 @@ export const NotificationProvider: React.FC<NotificationProviderProps> = ({
     <NotificationContext.Provider
       value={{ notifications, addNotification, removeNotification }}
     >
+      <Notification />
       {children}
     </NotificationContext.Provider>
   );
@@ -88,5 +89,3 @@ export const useNotification = () => {
   }
   return context;
 };
-
-

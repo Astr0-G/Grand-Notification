@@ -1,6 +1,6 @@
 {
   "name": "grand-notification",
-  "version": "1.0.13",
+  "version": "1.0.20",
   "description": "A notification plugin for react application",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,7 +11,27 @@
   "keywords": [
     "notification",
     "alert",
-    "awesome"
+    "awesome",
+    "react",
+    "reactjs",
+    "UI",
+    "user interface",
+    "alert system",
+    "toast",
+    "popup",
+    "message",
+    "push notification",
+    "real time",
+    "javascript",
+    "npm package",
+    "notify",
+    "grand-notification",
+    "web development",
+    "front end",
+    "UI library",
+    "interactive",
+    "dynamic",
+    "easy to use"
   ],
   "author": "astro <wangge326@gmail.com>",
   "license": "MIT",
@@ -19,15 +39,20 @@
     "url": "https://github.com/Astr0-G/Grand-Notification/issues"
   },
   "homepage": "https://github.com/Astr0-G/Grand-Notification/blob/main/README.md",
+  "scripts": {
+    "build": "tsc"
+  },
   "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.9",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
     "@types/react": "^18.2.8",
     "@types/styled-components": "^5.1.26",
     "@types/uuid": "^9.0.1",
-    "react": "18.2.0",
-    "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
-    "styled-components": "^5.3.9",
-    "typescript": "^5.1.3",
-    "uuid": "^9.0.0"
+    "typescript": "^5.1.3"
   }
 }
